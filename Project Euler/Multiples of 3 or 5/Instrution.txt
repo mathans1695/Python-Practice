@@ -1,0 +1,172 @@
+Problem Statement from Project Euler - Problem 1:
+	If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+	Find the sum of all the multiples of 3 or 5 below 1000.
+
+
+Problem Statement - Multiples of 3 and 5:
+	List the sum of all numbers which are multiples of either 3 or 5 upto the mentioned numbers
+	
+	Input:
+		No input - we have to find the sum of numbers which are multiples of 3 or 5 below 1000
+		
+	output:
+		Print the sum
+		
+Brute force approach:
+
+	Thought Process:
+		How do we sort the multiples of 3 or 5 among thousand numbers?
+	Let's iterate through every number upto 1000 and check whether a particular number is divisible by either 3 or 5
+	
+	Algorithm:
+		1. Initialize sum to zero
+		2. Iterate through every number upto 1000 using for loop
+		   Ex. for i in range(1000) 0<=i<1000
+		3. Check a particular number is divisible by 3 or 5
+		   Ex. if i % 3 == 0 or i % 5 == 0
+		4. If conditions satisfied, then add it to the sum
+		   Ex. sum += i
+		5. Finally, print the sum
+			
+	Implementation:
+		sum = 0
+		for i in range(1000): 
+			if i % 3 == 0 or i % 5 == 0:
+				sum += i
+		print(sum)
+	
+	Asymptotic Analysis:
+		The for loop will be executed 1000 times, starting from 0 to 999. So, the complexity of the problem is O(1000) or O(n) -> n = 1000.
+	
+Another approach(May be optimal):
+	
+	Thought Process:
+		I am looking for solution to reduce the number of iterations. Instead of iterating through every number, we can iterate through in multiple of 3 and in multiple of 5. That means two separate for loop. 
+		
+		One will iterate in multiple of 3 and another will iterate in multiple of 5.
+		
+		While iterating separately, I have to omit the common numbers occurs in the two iteration, that is number which are multiples of both 3 and 5. This can be achieved by putting a condition inside any one of the loop, that omit the common occurences
+		
+	Algorithm:
+		1. Initialize sum to 0
+		2. Iterate through numbers in multiples of 3 upto 1000
+		   Ex. for i in range(0, 1000, 3)
+		3. Check for common number, if common numbers occurs skip that number
+		   Ex. if i % 5 == 0
+				  continue
+		4. Add the multiples of 3 to sum, it will not add the common number, because we have skipped that number using conditional statement
+		5. Iterate through numbers in multiples of 5 upto 1000 and add it to the sum
+		6. print the sum
+		
+	Implementation:
+		sum = 0
+		for i in range(3, 1000, 3):
+			if i % 5 == 0:
+				continue
+			sum += i
+		for i in range(5, 1000, 5):
+			sum += i
+		print(sum)
+		
+	Asymptotic Analysis:
+		1. The first for loop will run 333 times, because between 3 and 1000, there are 333 numbers which are multiples of 3(which can be obtained by dividing 999 by 3) - O(333)
+		2. The second for loop will run 199 times, there are 199 numbers between 5 and 1000(which can be obtained by dividing 999 by 5 - omit the floating point number) - O(199)
+		3. Total complexity - O(532) - which is almost equal to O(n/2)
+		4. The second solution is twice as fast then first solution.
+		5. In calculating  BigO notation - We will omit the constant, here the denominator is constant, therefore we omit the denominator 2, for a very large number. But for this problem, we don't need to omit the constant, because n will always be equal to 1000, it will never change for this problem, according to the problem statement
+		
+		Note: If you want to find out, how many times each for loop is executed, you can put a counter inside the for loop.
+			Ex. count = 0
+				for i in range(3, 1000, 3):
+					count += 1
+				print(count)
+			count will be equal to 333
+			
+Another Approach(May be optimal):
+	
+	Thought Process:
+		Is there any way to reduce the iteration? Hmm.....
+		Is it possible to use mathematical formula?
+		Let's try:
+			There is a formula to find sum of n number. Let's see, whether we can use that formula
+			To find the sum of first 10 numbers, we can use the formula: n(n+1)/2 - 10(11)/2 -> 55(1+2+3+4+5+6+7+8+9+10)
+				We can use the same formula to find the sum of multiple of 3: There are 3 numbers that is multiple of 3 below 10, the numbers are - 3,6,9. We can also view the number like 1*3, 2*3, 3*3 
+				Add the number - 3 + 6 + 9:
+				we can do like - 1*3 + 2*3 + 3*3 - 3*(1+2+3) - 3*(3*(3+1)/2) - 18
+				We can use the same method to find the multiple of 5:
+				There is one multiple of 5 below 10: 5
+				Add that to previous sum - which will give us result 23. That's the sum of multiples of 3 or 5
+				One another constrain is to remove the common element: common element will occur in multiple of 15. Reduce the sum of multiple of 15 to sum of multiple of 3 and add that to the sum of 5, will give the result
+				
+			The whole thought process give us a formula to find the sum of multiples of 3 or 5:
+				result = (sum of multiple of 3 - sum of multiple of 15) + sum of multiple of 5
+				
+			Steps to find the formula:
+				To find the sum of multiples of 3 or 5 below R(1000)
+					R = 1000 -> sum of multiple of 3 or 5 below 1000
+					
+				1. Find the number of 3's below R: n3 = R/3
+				   Find the sum of multiple of 3: s3 = 3*(n3(n3+1)/2)
+				2. Find the number of 5's below R: n5 = R/5
+				   Find the sum of multiple of 5: s5 = 5*(n5(n5+1)/2)
+				3. Find the number of 15's below R: n15 = R/15
+				   Find the sum of multiple of 15: s15 = 15*(n15(n15+1)/2)
+				
+	Algorithm:
+		1. Initialize R to 1000. To find the sum of multiples of 3 or 5 below 1000
+		1. Number of 3's below R: Lets initialize a variable n3 = R // 3 (use integer division to remove floating point number in python)
+		   Ex. n3 = R // 3
+		2. Number of 5's below R: Lets initialize a variable n5 = R // 5 (use integer division to remove floating point number in python)
+		   Ex. n5 = R // 5
+		3. Number of 15's below R: Lets initialize a variable n15 = R // 15 (use integer division to remove floating point number in python)
+		   Ex. n15 = R // 15
+		4. Sum of multiple of 3: Let's initialize a variable s3
+		   Ex. s3 = 3*(n3(n3+1)/2)
+		5. Sum of multiple of 5: Let's initialize a variable s5
+		   Ex. s5 = 5*(n5(n5+1)/2)
+		6. Sum of multiple of 15: Let's initialize a variable s15
+		   Ex. s15 = 15*(n15(n15+1)/2)
+		7. result = (s3 - s15) + s5
+		
+	Implementation:
+		R = 1000
+		n3 = R // 3
+		n5 = R // 5
+		n15 = R // 15
+		s3 = 3*(n3*(n3+1)/2)
+		s5 = 5*(n5*(n5+1)/2)
+		s15 = 15*(n15*(n15+1)/2)
+		result = (s3 - s15) + s5
+		print(result)
+		
+	Asymptotic Analysis:
+		1. 9 instrutions(lines) are there in the program. In asymptotic analysis to determine BigO, we assume every instrutions will take constant time.
+		
+		Note: Though multiplication and division operation may take more than one instrutions to perform, we consider all addition, multiplication, division, subtraction and assignment operation as a constant time operation.
+		
+		2. So, the program will always perform 8 instrutions, no matter the size of the input(R)
+		
+		3. The complexity of the problem is O(1) - constant time complexity.
+		
+		4. I think this is the best approach, there may be another approach.
+	
+	Modification Made:
+		Since the 3rd apprach, will include the last number into the sum. We have to omit the last number. Because the problem statement asked us to find the sum of multiples of 3 or 5 below 1000(Exclusively).
+		Therefore, while calculating number of multiple of 3, instead of using R in the formula, use R-1 instead.
+		Use that in finding number of multiple of 5 and 15
+		
+	Alternate implementation:
+		R = 1000
+		n3 = (R-1) // 3
+		n5 = (R-1) // 5
+		n15 = (R-1) // 15
+		s3 = 3*(n3*(n3+1)/2)
+		s5 = 5*(n5*(n5+1)/2)
+		s15 = 15*(n15*(n15+1)/2)
+		result = (s3 - s15) + s5
+		print(result)
+		
+	Asymptotic Analysis:
+		Alternate implementation still execute 9 instructions. So, the complexity remains the same. O(1) - Constant time complexity
+		

@@ -1,0 +1,16 @@
+Problem Statement from Project Euler:
+	Thought Process:
+		Three digits number starts from 100 and ends with 999. Use two for loop and find the product of every combination of two three digits multiples. 
+		Check whether it's a palindrome by separating and combining the number. After combining, check if both numbers are same
+		
+	Algorithm:
+		1. Use two for loop, and it should starts its iteration from 999 and ends with 100, because this will take iteration.
+			for i in range(999, 99, -1):
+				for j in range(999, 99, -1):
+					product = i * j
+					copy = product
+					while copy != 0:
+						reverse += copy % 10
+						copy //= 10
+					if product == reverse:
+						print(product)

@@ -1,0 +1,73 @@
+Problem Statement from Project Euler:
+	The prime factors of 13195 are 5, 7, 13 and 29.
+	What is the largest prime factor of the number 600851475143 ?
+	
+Brute Force Approach:
+	Thought Process:
+		Hmm...First, lets find the prime number upto the given number, divide the given number by prime number starting from lowest prime number to biggest prime number and then divide the quotient again by prime number upto the quotient number, until the quotient becomes one, store the divisor in every case into an array. The result is the largest number in the array
+		
+		To find prime number upto n, iterate from 2 to n and put another iterator, that iterate from 2 to n and check whether particular number has only one divisor equal to that number, if so, store that number in the array
+		
+		After finding list of prime numbers upto n, prime factors can be obtained by the above mentioned procedure
+			Iterate through the prime array and check whether the number is divisible by the prime number. Store the denominator to the another array called prime factor array and reduce the number to numerator
+			Then again do the same process with numerator as number
+			
+		Now, prime factor array will have list of prime factors for the given number. Largest number in the array is the largest prime factor for the given number
+		
+	Algorithm:
+		1. Initialize prime_num = [2], prime_factors = [], n = some number
+		2. Identify the prime number using two for loops,
+				for i in range(2, n+1):
+					for j in range(2, i):
+						if i % j == 0:
+							break
+						elif i == j + 1:
+							prime_num.append(i)
+		3. Identifying the prime factors:
+				while n != 1:
+					for i in prime_num:
+						if n % i == 0:
+							n = n / i
+							prime_factors.append(i)
+		4. To find the largest prime factors, find the largest number in the prime_factors array:
+				largest = prime_factors[0]
+				for i in prime_factors:
+					if i > largest:
+						largest = i
+		5. Print the largest
+		
+	Implementation:
+		prime_num, prime_factors, n = [], [], 600851475143
+		for i in range(2, n+1):
+			for j in range(2, i):
+				if i % j == 0:
+					break
+				elif i == j + 1:
+					prime_num.append(i)
+		
+		while n != 1:
+			for i in prime_num:
+				if n % i == 0:
+					n = n / i
+					prime_factors.append(i)
+		
+		largest = prime_factors[0]
+		for i in prime_factors:
+			if i > largest:
+				largest = i
+		print(largest)
+		
+	Asymptotic Analysis:
+		Here, we are nested for loop, the outer loop will run 2 to n+1 times and the inner loop will run i times for each outer loop iteration.
+		Ex.) n = 2, outer loop will run one time and i = 2
+			        inner loop will also run one time
+		     n = 3, outer loop will run two times for i = 2 and 3
+			        inner loop will run one time for i = 2 and two times for i = 3 - (total - 3 times)
+			 n = 4, outer loop will run thrice from 2 to 4,
+			        inner loop will run 1, 2, 3 - (total - 6 times)
+			 n = 5, outer loop will run four times from 2 to 5,
+			        inner loop will run 1, 2, 3, 4 - (total - 10 times)
+					
+		As you can see, n increases in polynomial terms, the complexity of the problem in worst case scenario is O(n^2)
+		
+		The second while loop and for loop depends on numbers, in worst case scenario, it is still n^2
