@@ -1,0 +1,90 @@
+logging_practice - DEBUG - Start of program
+logging_practice - DEBUG - Start of factorial(5)
+logging_practice - DEBUG - i is 1, total is 1
+logging_practice - DEBUG - i is 2, total is 2
+logging_practice - DEBUG - i is 3, total is 6
+logging_practice - DEBUG - i is 4, total is 24
+logging_practice - DEBUG - i is 5, total is 120
+logging_practice - DEBUG - End of factorial (5)
+logging_practice - DEBUG - End of program
+logging_practice - DEBUG - Start of program
+logging_practice - DEBUG - Start of factorial(5)
+logging_practice - DEBUG - i is 1, total is 1
+logging_practice - DEBUG - i is 2, total is 2
+logging_practice - DEBUG - i is 3, total is 6
+logging_practice - DEBUG - i is 4, total is 24
+logging_practice - DEBUG - i is 5, total is 120
+logging_practice - DEBUG - End of factorial (5)
+logging_practice - DEBUG - End of program
+logging_practice - DEBUG - Start of program
+logging_practice - DEBUG - Start of factorial(5)
+logging_practice - DEBUG - i is 1, total is 1
+logging_practice - DEBUG - i is 2, total is 2
+logging_practice - DEBUG - i is 3, total is 6
+logging_practice - DEBUG - i is 4, total is 24
+logging_practice - DEBUG - i is 5, total is 120
+logging_practice - DEBUG - End of factorial (5)
+logging_practice - DEBUG - End of program
+logging_practice - DEBUG - Start of program
+logging_practice - DEBUG - Start of factorial(5)
+logging_practice - DEBUG - i is 1, total is 1
+logging_practice - DEBUG - i is 2, total is 2
+logging_practice - DEBUG - i is 3, total is 6
+logging_practice - DEBUG - i is 4, total is 24
+logging_practice - DEBUG - i is 5, total is 120
+logging_practice - DEBUG - End of factorial (5)
+logging_practice - DEBUG - End of program
+logging_practice - DEBUG - Start of program
+logging_practice - DEBUG - Start of factorial(5)
+logging_practice - DEBUG - i is 1, total is 1
+logging_practice - DEBUG - i is 2, total is 2
+logging_practice - DEBUG - i is 3, total is 6
+logging_practice - DEBUG - i is 4, total is 24
+logging_practice - DEBUG - i is 5, total is 120
+logging_practice - DEBUG - End of factorial (5)
+logging_practice - DEBUG - End of program
+logging_practice - DEBUG - Start of program
+logging_practice - DEBUG - Start of factorial(5)
+logging_practice - DEBUG - i is 1, total is 1
+logging_practice - DEBUG - i is 2, total is 2
+logging_practice - DEBUG - i is 3, total is 6
+logging_practice - DEBUG - i is 4, total is 24
+logging_practice - DEBUG - i is 5, total is 120
+logging_practice - DEBUG - End of factorial (5)
+logging_practice - DEBUG - End of program
+logging_practice - DEBUG - Start of program
+logging_practice - DEBUG - Start of factorial(5)
+logging_practice - DEBUG - i is 1, total is 1
+logging_practice - DEBUG - i is 2, total is 2
+logging_practice - DEBUG - i is 3, total is 6
+logging_practice - DEBUG - i is 4, total is 24
+logging_practice - DEBUG - i is 5, total is 120
+logging_practice - DEBUG - End of factorial (5)
+logging_practice - DEBUG - End of program
+logging_practice - DEBUG - Start of program
+logging_practice - DEBUG - Start of factorial(5)
+logging_practice - DEBUG - i is 1, total is 1
+logging_practice - DEBUG - i is 2, total is 2
+logging_practice - DEBUG - i is 3, total is 6
+logging_practice - DEBUG - i is 4, total is 24
+logging_practice - DEBUG - i is 5, total is 120
+logging_practice - DEBUG - End of factorial (5)
+logging_practice - DEBUG - End of program
+logging_practice - DEBUG - Start of program
+logging_practice - DEBUG - Start of factorial(5)
+logging_practice - DEBUG - i is 1, total is 1
+logging_practice - DEBUG - i is 2, total is 2
+logging_practice - DEBUG - i is 3, total is 6
+logging_practice - DEBUG - i is 4, total is 24
+logging_practice - DEBUG - i is 5, total is 120
+logging_practice - DEBUG - End of factorial (5)
+logging_practice - DEBUG - End of program
+__main__ - DEBUG - Start of program
+__main__ - DEBUG - Start of factorial(5)
+__main__ - DEBUG - i is 1, total is 1
+__main__ - DEBUG - i is 2, total is 2
+__main__ - DEBUG - i is 3, total is 6
+__main__ - DEBUG - i is 4, total is 24
+__main__ - DEBUG - i is 5, total is 120
+__main__ - DEBUG - End of factorial (5)
+__main__ - DEBUG - End of program

@@ -1,0 +1,28 @@
+root:DEBUG:Guess the coin toss! Enter heads or tails:
+root:DEBUG:Guess = heads
+root:DEBUG:toss = heads
+root:DEBUG:Checking toss and guess is equal
+root:DEBUG:Is it equal - True
+root:DEBUG:You got it!
+root:DEBUG:Guess the coin toss! Enter heads or tails:
+root:DEBUG:Guess = heads
+root:DEBUG:toss = tails
+root:DEBUG:Checking toss and guess is equal
+root:DEBUG:Is it equal - False
+root:DEBUG:Nope! Guess again!
+root:DEBUG:Another guess = heads
+root:DEBUG:toss = tails
+root:DEBUG:Checking toss and guess is equal
+root:DEBUG:Is it equal - False
+root:DEBUG:Nope. You are really bad at this game.
+root:DEBUG:Guess the coin toss! Enter heads or tails:
+root:DEBUG:Guess = tails
+root:DEBUG:toss = heads
+root:DEBUG:Checking toss and guess is equal
+root:DEBUG:Is it equal - False
+root:DEBUG:Nope! Guess again!
+root:DEBUG:Another guess = heads
+root:DEBUG:toss = heads
+root:DEBUG:Checking toss and guess is equal
+root:DEBUG:Is it equal - True
+root:DEBUG:You got it!
