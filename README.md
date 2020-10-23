@@ -20,6 +20,8 @@ Navigate to data scraper folder to experience the below four projects:
 # Own Python Module
 Navigate to Own Python Module folder to experience the module that I have created during my learning journey:
 
+   - **Reversi Game** - *Module for reversi game and this is my first game I created using python, Reversigame.py module file contains logic of the game and the test.py file will let you use the module to play the game, so use the test.py file to play the game. It's a two player game, so better play with two players. Once you started playing the game, you will figure out the game, because the program will help you to play the game*
+
    - **Array** - *Array like module, you can perform basic array operations using this module. This module also has the capacity to create 2d array*
    
    - **Multiarray** - *Module to create multi-dimensional array, array of any dimensions can be created using this module. Accessing and setting values can be done by passing tuple to getter and setter method like multiarray(2,2,2). This module was created with the help of Array1 module*
@@ -59,3 +61,13 @@ Navigate to Own Python Module folder to experience the module that I have create
    - **PrintCalendar** - *This is also a helper function, pass a date object and it will display the calendar of that month. This helper function created with the help of date1 module*
    
    - **Vector** - *This module is in progress, created to deal with vectors*
+   
+   - **life** - *life is a module for playing gameoflife game and it is still in progress*
+   
+# Project Euler
+Navigate to project euler folder to see the problems solved from the project euler website
+
+   *30 problems solved and some problems have more than one solutions and the instruction.txt file contains algorithm, implementation and asymptotic analysis for every approach for that particular problem.*
+   
+# Learn Python the Hard Way Exercises
+Navigate to learn the hard way exercises to see the exercises finished from the book. This is the first book I read to learn python.
