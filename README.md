@@ -20,7 +20,7 @@ Navigate to data scraper folder to experience the below four projects:
 # Own Python Module
 Navigate to Own Python Module folder to experience the module that I have created during my learning journey:
 
-   - **Array** - *Array like module, you can do perform basic array operations using this module. This module also has the capacity to create 2d array*
+   - **Array** - *Array like module, you can perform basic array operations using this module. This module also has the capacity to create 2d array*
    
    - **Multiarray** - *Module to create multi-dimensional array, array of any dimensions can be created using this module. Accessing and setting values can be done by passing tuple to getter and setter method like multiarray(2,2,2). This module was created with the help of Array1 module*
    
@@ -28,13 +28,13 @@ Navigate to Own Python Module folder to experience the module that I have create
    
    - **Bag** - *Bag module, this module basically act like a bag - you can pick things from the bag, put things into the bag and also it has iter dunder method to see what's inside the bag*
    
-   - **Dict** - *An upgrade to Bag Module, basically the Bag can have non unique items and to keep track of non-unique items, this module was created. Eg.) If you have two apples in the bag, this module will tell you that you have two apples in your bag. Here we use Dictionary datastructure to achieve this feature, so I named the module as Dict*
+   - **Dict** - *An upgrade to Bag Module, basically the Bag can have non-unique items and to keep track of non-unique items, this module was created. Eg.) If you have two apples in the bag, this module will tell you that you have two apples in your bag. Here we use Dictionary datastructure to achieve this feature, so I named the module as Dict*
    
-   - **Bagset** - *Set module, this Set module is created using the Bag module. This module basically act like a Set, only unique items will be added to the Set and you can perform certain operation on two Sets like comparing two Sets, performing Union, intersection, and Complement operations on Sets*
+   - **Bagset** - *Set module, this Set module was created using the Bag module. This module basically act like a Set, only unique items will be added to the Set and you can perform certain operation on two Sets like comparing two Sets, performing Union, intersection, and Complement operations on Sets*
    
-   - **LinearSet** - *This module is same like Bagset module, but this module is created using python list datastructure and it perform all operations mentioned in Bagset module*
+   - **LinearSet** - *This module is same like Bagset module, but this module is created using python list datastructure and it can able to perform all operations mentioned in Bagset module*
    
-   - **LinearMap** - *Dictionary like module created using own Set and Array module, you can basic dictionary operations like assign values and access value using key and you can iterate through linearmap using keyArray() method*
+   - **LinearMap** - *Dictionary like module created using Set and Array module, you can do basic dictionary operations like assign values and access values using key and you can iterate through linearmap using keyArray() method*
    
    - **Counter** - *Counter module to perform counting operation. Create instance and whenever you have a need to count something, call push method to increment the count and if you want to reset the count - call the reset method and if you want to know the current count - call the display method from Counter instances*
    
