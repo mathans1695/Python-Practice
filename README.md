@@ -22,33 +22,33 @@ Navigate to Own Python Module folder to experience the module that I have create
 
    - **Array** - *Array like module, you can do perform basic array operations using this module. This module also has the capacity to create 2d array*
    
+   - **Multiarray** - *Module to create multi-dimensional array, array of any dimensions can be created using this module. Accessing and setting values can be done by passing tuple to getter and setter method like multiarray(2,2,2). This module was created with the help of Array1 module*
+   
+   - **Matrix** - *Module to perform matrix operations like transposing and scaling the matrix and adding, substracting, and multiplying two matrixes. This module created with the help of Array2D from Array1 module*
+   
    - **Bag** - *Bag module, this module basically act like a bag - you can pick things from the bag, put things into the bag and also it has iter dunder method to see what's inside the bag*
    
+   - **Dict** - *An upgrade to Bag Module, basically the Bag can have non unique items and to keep track of non-unique items, this module was created. Eg.) If you have two apples in the bag, this module will tell you that you have two apples in your bag. Here we use Dictionary datastructure to achieve this feature, so I named the module as Dict*
+   
    - **Bagset** - *Set module, this Set module is created using the Bag module. This module basically act like a Set, only unique items will be added to the Set and you can perform certain operation on two Sets like comparing two Sets, performing Union, intersection, and Complement operations on Sets*
+   
+   - **LinearSet** - *This module is same like Bagset module, but this module is created using python list datastructure and it perform all operations mentioned in Bagset module*
+   
+   - **LinearMap** - *Dictionary like module created using own Set and Array module, you can basic dictionary operations like assign values and access value using key and you can iterate through linearmap using keyArray() method*
    
    - **Counter** - *Counter module to perform counting operation. Create instance and whenever you have a need to count something, call push method to increment the count and if you want to reset the count - call the reset method and if you want to know the current count - call the display method from Counter instances*
    
    - **Date** - *Date module perform basic operations on dates. Date module accepts month, day and year as arguments. Date instances has access to the methods like dayOfWeek(), monthName(), isLeapYear(), numDays(otherDate) - Number of dates between two dates, dayOfWeekName(), dayOfYear(), isWeekDay(), isEquinox(self), isSolstice() and you can compare two dates*
    
-   - **Dict** - *An upgrade to Bag Module, basically the Bag can have non unique items and to keep track of non-unique items, this module was created. Eg.) If you have two apples in the bag, this module will tell you that you have two apples in your bag. Here we use Dictionary datastructure to achieve this feature, so I named the module as Dict*
+   - **Time** - *Module to handle operations on time*
    
-   - **LinearSet** - *This module is same like Bagset module, but this module is created using python list datastructure and it perform all operations mentioned in Bagset module*
-   
-   - **LinearMap** - *Dictionary like module created using own Set and Array module, you can basic dictionary operations like assign values and access value using key and you can iterate through linearmap using keyArray() method*
+   - **TimeDate** - *This module is like datetime module in python and it is a  combination of date and time module and can able to perform both operations that data and time module performs*
    
    - **Linkedlist** - *Linked list datastructure - simple linked list datastructure*
    
    - **Point** - *Point module to represent a point(x,y), you can get coordinates of the point and distance between two points*
    
    - **Linesegment** - *Linesegment module can able to perform operations on line - you can determine the length, slope, midpoint of a line and can check whether a line is horizontal or vertical. This module can be used to check whether two lines intersect each other, parallel or perpendicular to each other, bisects each other or intersect at midpoint. This module created with the help of Point module*
-   
-   - **Multiarray** - *Module to create multi-dimensional array, array of any dimensions can be created using this module. Accessing and setting values can be done by passing tuple to getter and setter method like multiarray(2,2,2). This module was created with the help of Array1 module*
-   
-   - **Time** - *Module to handle operations on time*
-   
-   - **TimeDate** - *This module is like datetime module in python and it is a  combination of date and time module and can able to perform both operations that data and time module performs*
-   
-   - **Matrix** - *Module to perform matrix operations like transposing and scaling the matrix and adding, substracting, and multiplying two matrixes. This module created with the help of Array2D from Array1 module*
    
    - **range_iter** - *Like range function. Specify start and stop, it will iterate from start to stop, when used in for-in loop*
    
