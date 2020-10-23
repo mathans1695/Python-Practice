@@ -60,7 +60,7 @@ class MultiArray:
 			sum += mul
 			self._factors[k] = sum
 			k += 1
-		self._factors[k] = 0
+		self._factors[k] = 1
 		return self._factors
 		
 new = MultiArray(2,2,3)
