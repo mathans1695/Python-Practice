@@ -75,5 +75,5 @@ Navigate to learn the hard way exercises to see the exercises finished from the 
 # Codeforces
 Navigate to codeforces to see some of the problems I solved from the codeforces website
 
-# Python Practice
+# Practice
 All the other folders are for practice purpose. Program I did to learn python concepts clearly during my learning journey
