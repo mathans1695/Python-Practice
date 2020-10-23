@@ -47,4 +47,7 @@ class _BagIterators:
 			
 		else:
 			raise StopIteration
-			
+
+dic = Dict()
+dic
+print(dic)
