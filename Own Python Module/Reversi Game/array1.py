@@ -23,7 +23,7 @@ class Array:
 		
 	def clear(self, value):
 		for i in range(len(self)):
-			self._elements[i] = None
+			self._elements[i] = value
 			
 	def __iter__(self):
 		return _ArrayIterator(self._elements)
