@@ -71,3 +71,9 @@ Navigate to project euler folder to see the problems solved from the project eul
    
 # Learn Python the Hard Way Exercises
 Navigate to learn the hard way exercises to see the exercises finished from the book. This is the first book I read to learn python.
+
+# Codeforces
+Navigate to codeforces to see some of the problems I solved from the codeforces website
+
+# Python Practice
+All the other folders are for practice purpose. Program I did to learn python concepts clearly during my learning journey
