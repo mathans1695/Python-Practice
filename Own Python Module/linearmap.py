@@ -43,7 +43,7 @@ class Map:
 	
 	def keyArray(self):
 		temp = Array(len(self._entryList))
-		numbers = Array(len(self._entryList)
+		numbers = Array(len(self._entryList))
 		for i in range(len(numbers)):
 			numbers[i] = i
 		
@@ -77,7 +77,7 @@ class _MapIterator:
 			raise StopIteration
 
 new = Map()
-new[0] = 5
+new['super'] = 5
 new[1] = 6
 new[2] = 7
 
