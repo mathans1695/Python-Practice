@@ -22,7 +22,7 @@ class LineSegment:
 	def endPointA(self):
 		return "({}, {})".format(self._pointA.getX(), self._pointA.getY())
 	
-	def endPoint(self):
+	def endPointB(self):
 		return "({}, {})".format(self._pointB.getX(), self._pointB.getY())
 		
 	def __str__(self):
