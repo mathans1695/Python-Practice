@@ -63,3 +63,11 @@ Navigate to Own Python Module folder to experience the module that I have create
    - **Vector** - *This module is in progress, created to deal with vectors*
    
    - **life** - *life is a module for playing gameoflife game and it is still in progress*
+   
+# Project Euler
+Navigate to project euler folder to see the problems solved from the project euler website
+
+   *30 problems solved and some problems have more than one solutions and the instruction.txt file contains algorithm, implementation and asymptotic analysis for every approach for that particular problem.*
+   
+# Learn Python the Hard Way Exercises
+Navigate to learn the hard way exercises to see the exercises finished from the book. This is the first book I read to learn python.
