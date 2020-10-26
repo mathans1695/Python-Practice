@@ -14,7 +14,7 @@ Navigate to data scraper folder to experience the below four projects:
    
    - **Scraping companies data from html files** - *Program to scrape companies data from local html files located in the folder 'companies data in html files/10'. Data scraper processed 8542 html files and extracted away 22000 companies data into a csv file*
    
-   - **Tirupur database scraper** - *Program to convert an excel file (data.xlsx) containing companies data into an csv file of desired format. Datascraper2.py file will do the job better. The sample.csv file is the output and finished.xlsx is the result of manual processing of sample.csv file*
+   - **Tirupur database scraper** - *Program to convert an excel file (data.xlsx) containing companies data into a csv file of desired format. Datascraper2.py file will do the job better. The sample.csv file is the output and finished.xlsx is the result of manual processing of sample.csv file*
 
 
 # Own Python Module
